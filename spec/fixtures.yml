@@ -1,0 +1,75 @@
+#total price < 60
+#total price = 59.2
+#expected price = 59.2
+purchased_products_not_applied_promotion:
+  - code: 001
+    name: Lavender heart
+    price: 9.25
+  - code: 002
+    name: Personalised cufflinks
+    price: 30.00
+  - code: 003
+    name: kids T-shirt
+    price: 19.95
+    
+#total price > 60
+#total price = 74.2
+#expected price = 66.78
+purchased_products_applied_total_price_promotions:
+  - code: 001
+    name: Lavender heart
+    price: 9.25
+  - code: 002
+    name: Personalised cufflinks
+    price: 45.00
+  - code: 003
+    name: kids T-shirt
+    price: 19.95
+
+#total price < 60
+#total price = 38.45
+#expected price = 36.95
+purchased_products_applied_specific_product_promotions:
+  - code: 001
+    name: Lavender heart
+    price: 9.25
+  - code: 001
+    name: Lavender heart
+    price: 9.25
+  - code: 003
+    name: kids T-shirt
+    price: 19.95
+
+#total price < 60
+#total price = 58.4
+#expected price = 54
+purchased_products_applied_many_specific_product_promotions:
+  - code: 001
+    name: Lavender heart
+    price: 9.25
+  - code: 001
+    name: Lavender heart
+    price: 9.25
+  - code: 003
+    name: kids T-shirt
+    price: 19.95
+  - code: 003
+    name: kids T-shirt
+    price: 19.95
+
+#total price > 60
+#total price = 83.45
+#expected price = 73.76
+purchased_products_applied_multiple_promotions:
+  - code: 001
+    name: Lavender heart
+    price: 9.25
+  - code: 001
+    name: Lavender heart
+    price: 9.25
+  - code: 002
+    name: Personalised cufflinks
+    price: 45.00
+  - code: 003
+    name: kids T-shirt
+    price: 19.95
